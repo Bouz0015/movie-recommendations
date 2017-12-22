@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    background-color: #DDD;
+}
+
+html{
+    font-size: 20px;
+    font-family: 'Dosis', helvetica, arial, sans-serif;
+    line-height: 1.5;
+}
+h1{
+    font-family: 'Slabo 27px', 'Book Antiqua', Palatino, serif; 
+ 
+}
+h2{
+    
+}
+li{
+    
+}
+div.movie{
+    margin: 10px;
+    box-shadow: 5px 5px;
+}
+
+
+/*NAVIGATION*/
+.page{
+    display: none;
+    margin-top: 3rem; 
+    padding: 1rem;
+}
+.page.active{
+    display: block;
+}
+.search{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1.5rem
+}
+.not{
+    display: none;
+}
+/*SEARCH BAR*/
+.search{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3rem;
+}
+#search-input{
+    position:absolute;
+    height: 3rem;
+    z-index: 110;
+    left:0;
+    top: 0;
+    right: 1.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    
+}
+#search-button{
+    position: absolute;
+    height: 3rem;
+    z-index: 120;
+    width: 3rem;
+    top: 0;
+    right: 0;
+    background-color: #DDD
+}
+
+/*SEARCH RESULTS*/
+.movie{
+    max-width: 800px;
+    padding: 1rem;
+    border: 1px solid #666;
+    overflow: auto;    /* make the border wrap floated children */
+    clear: both;
+}
+.poster{
+    float:left;
+    margin: 0, 0.5rem 0.5rem 0;
+    width: 150px;
+    height: auto;
+    min-height: 150px;
+}
+.movie-title{
+    font-size: 2rem;
+    color: #333;
+}
+.movie-desc{
+    font-size: 1rem;
+    color:#999;
+}
+.attribution{
+    text-align: center;
+}
+.attribution{
+    width: 80%;
+}
+
+/*RECOMMENDATIONS*/
